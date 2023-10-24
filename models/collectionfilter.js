@@ -76,7 +76,7 @@ export default class CollectionFilter {
                         let limit = parseInt(this.params[key]);
                         let offset = (parseInt(this.params["offset"]) || 0)
                         let index = limit * offset;
-                        this.objectsList = this.objectsList.slice(index, index + limit-1);
+                        this.objectsList = this.objectsList.slice(index, index + limit);
                         break;
                     case "offset":
                         break; // Handled in limit
